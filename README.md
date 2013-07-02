@@ -4,7 +4,7 @@ This is a tiny applicaiton that backs up your data from [Moves](http://www.moves
 and shoves it into a database table named `moves_days` keyed on `day`. The data lives in a column named `json`
 and is the literal JSON string returned from the API.
 
-Then, to set up on Heroku:
+To get started on Heroku:
 
 ```bash
 $ git clone https://github.com/peterkeen/moves-backup
