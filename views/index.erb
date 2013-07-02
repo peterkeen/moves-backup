@@ -1,0 +1,12 @@
+<% if @moves_authorize_uri %>
+  <a class="btn btn-large btn-primary" href="<%= @moves_authorize_uri %>">Authorize with Moves</a>
+<% end %>
+
+<% if @days %>
+<h2>Backed Up Days</h2>
+<ul>
+  <% @days.each do |day| %>
+    <li><a href="/day/<%= day.day.strftime('%Y-%m-%d') %>"><%= day.day.strftime('%Y-%m-%d') %></a></li>
+  <% end %>
+</ul>
+<% end %>
