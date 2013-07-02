@@ -12,6 +12,7 @@ $ git clone https://github.com/peterkeen/moves-backup
 $ cd moves-backup
 $ heroku create
 $ heroku config:set MOVES_CLIENT_ID=your_client_id MOVES_CLIENT_SECRET=your_client_secret USERNAME=your_basic_auth_username PASSWORD=your_basic_auth_password
+$ git push heroku master
 $ heroku open
 ```
 
