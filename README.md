@@ -24,7 +24,7 @@ Login with your basic auth username and password and click the big blue button t
 
 Run the inital fetch:
 
-```
+```bash
 $ heroku run rake fetch
 ```
 
