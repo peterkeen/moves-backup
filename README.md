@@ -29,9 +29,10 @@ $ heroku run rake fetch
 
 This shouldn't print anything out, but if you refresh the page you should see some data under "Backed Up Days". Clicking on those links will give you the raw JSON.
 
-Now, set up the fetch schedule:
+Now, add backups and set up the fetch schedule:
 
 ```bash
+$ heroku addons:add pgbackups:auto-month
 $ heroku addons:add scheduler
 $ heroku addons:open scheduler
 ```
